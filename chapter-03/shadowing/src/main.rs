@@ -9,4 +9,7 @@ fn main() {
     }
 
     println!("The value of x is: {x}"); // This will print 6, because the inner variable "x" is only valid within the inner scope.
+
+    let spaces = "   ";
+    let spaces = spaces.len(); // This is also shadowing. The new variable "spaces" shadows the previous variable "spaces", and its type is now usize instead of &str.
 }
